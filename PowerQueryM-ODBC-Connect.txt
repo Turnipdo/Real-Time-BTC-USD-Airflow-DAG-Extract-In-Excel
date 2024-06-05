@@ -1,0 +1,9 @@
+let
+    Source = Odbc.Query("Driver={PostgreSQL Unicode};Server=localhost;Database=test;",
+    "
+    SELECT *
+    FROM btc_1m_data
+    
+    ")
+in
+    Source
